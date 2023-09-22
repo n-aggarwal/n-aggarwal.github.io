@@ -56,17 +56,20 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
 const Work = () => {
   return (
-    <div className="my-40 scroll-mt-[4rem]" id="work">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">
-        Experience
-      </h2>
-      <div className="w-[75] mx-auto relative text-center">
-        <div className="absolute left-8 top-0 w-[4px] h-full bg-dark origin-top" />
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
-          {jobDetails.map((job, index) => (
-            <Details key={index} {...job} />
-          ))}
-        </ul>
+    <div>
+      <div className="w-full h-[10rem] bg-gradient-to-b to-[#2e2257]/5 from-[#422e84]"></div>{" "}
+      <div className="scroll-mt-[4rem]" id="work">
+        <h2 className="font-bold text-8xl mb-32 w-full text-center">
+          Experience
+        </h2>
+        <div className="w-[75] mx-auto relative text-center">
+          <div className="absolute left-8 top-0 w-[4px] h-full bg-dark origin-top" />
+          <ul className="w-full flex flex-col items-start justify-between ml-4">
+            {jobDetails.map((job, index) => (
+              <Details key={index} {...job} />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

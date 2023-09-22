@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ParticlesContainer from "../../components/ParticlesContainer.js";
-import ProjectsBtn from "../../components/ProjectsBtn.js";
 import Avatar from "../../components/Avatar.js";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
@@ -9,7 +8,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-screen scroll-mt-[100rem]" id="home">
+    <div className="bg-primary/60  h-[86vh] scroll-mt-[100rem]" id="home">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className=" text-center flex flex-col mt-4 xl:pt-10 xl:text-left h-full container mx-auto ">
           <motion.h1
