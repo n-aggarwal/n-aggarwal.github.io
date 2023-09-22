@@ -71,7 +71,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
 const Work = () => {
   return (
-    <div className="my-40" id="WorkPage">
+    <div className="my-40" id="work">
       <h2 className="font-bold text-8xl mb-32 w-full text-center">
         Experience
       </h2>

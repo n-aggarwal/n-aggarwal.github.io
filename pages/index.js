@@ -8,13 +8,15 @@ import Skills from "./skills";
 
 const DefaultPage = () => {
   return (
-    <Layout>
-      <Home />
-      <Work />
-      <Projects />
-      <Skills />
-      <Contact />
-    </Layout>
+    <div className="scroll-smooth">
+      <Layout>
+        <Home />
+        <Work />
+        <Projects />
+        <Skills />
+        <Contact />
+      </Layout>
+    </div>
   );
 };
 
