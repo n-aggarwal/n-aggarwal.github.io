@@ -2,46 +2,31 @@ import React from "react";
 
 const jobDetails = [
   {
-    position: "Software Engineer",
-    company: "Google",
-    companyLink: "https://www.google.com",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+    position: "Research Intern",
+    company: "privacy-tech-lab",
+    companyLink: "https://privacytechlab.org/",
+    time: "Jan 2023 - Present",
+    address: "Middletown, CT (Remote)",
+    work: "Worked on implemeting GPC (Global Privacy Control on Android). To do so, we first explored the different viable implementation approaches of GPC (Global PrivacyControl) on Android. Next, we looked at the legal issues surrounding privacy laws in different regions including CCPA, CDPA, and GDPR. Finally, we counducted a large-scale network nalysis of over 1000 apps. ",
   },
 
   {
-    position: "Software Engineer",
-    company: "Google",
-    companyLink: "https://www.google.com",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+    position: "Frontend Product Manager",
+    company: "OurCampus",
+    companyLink: "https://about.ourcampuswes.org/",
+    time: "May 2023 - Present",
+    address: "Middletown, CT",
+    work: "Led and managed a team of developers to continously update the app- fixing bugs and addding new features, while taking care of various other aspects of running an app including outreach, marketing, deployment, etc.",
   },
   {
-    position: "Software Engineer",
-    company: "Google",
-    companyLink: "https://www.google.com",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+    position: "Teaching Assistant",
+    company: "Wesleyan University",
+    companyLink: "https://www.wesleyan.edu/",
+    time: "Jan 2023 - May 2023",
+    address: "Middletown, CT",
+    work: "Led weekly help sessions to assist students with basic data structure and memory Management issues; helped the professor in labs by clarifying students' questions and providing examples of good coding; provided constructive feedback on the weekly problem sets for students.",
   },
-  {
-    position: "Software Engineer",
-    company: "Google",
-    companyLink: "https://www.google.com",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
-  },
-  {
-    position: "Software Engineer",
-    company: "Google",
-    companyLink: "https://www.google.com",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
-  },
+
   // Add more job details objects here
 ];
 
@@ -55,7 +40,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             href={companyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-red-600 capitalize"
+            className="text-red-600 capitalize hover:underline"
           >
             @{company}
           </a>{" "}
@@ -71,7 +56,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
 const Work = () => {
   return (
-    <div className="my-40" id="work">
+    <div className="my-40 scroll-mt-[4rem]" id="work">
       <h2 className="font-bold text-8xl mb-32 w-full text-center">
         Experience
       </h2>
