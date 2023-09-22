@@ -7,7 +7,7 @@ import { fadeIn } from "../../variants.js";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-screen">
+    <div className="bg-primary/60 h-screen" id="HomePage">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className=" text-center flex flex-col mt-4 xl:pt-10 xl:text-left h-full container mx-auto ">
           <motion.h1
@@ -20,7 +20,7 @@ const Home = () => {
             Bytes of Brilliance <br />
             <span className="text-accent">One Line at a Time</span>
           </motion.h1>
-          <div className="flex justify-center relative w-80">
+          <div className="flex justify-center relative w-80 xl:ml-2 sm:mx-auto">
             <p>
               I am a sophomore at Wesleyan University studying Computer Science
               and Mathematics. I have been working on Privacy Research, more
