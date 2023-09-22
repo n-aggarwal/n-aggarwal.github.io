@@ -4,6 +4,8 @@ import ProjectsBtn from "../../components/ProjectsBtn.js";
 import Avatar from "../../components/Avatar.js";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
+import { HiDownload } from "react-icons/hi";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Home = () => {
   return (
@@ -20,19 +22,43 @@ const Home = () => {
             Bytes of Brilliance <br />
             <span className="text-accent">One Line at a Time</span>
           </motion.h1>
-          <div className="flex justify-center relative w-80 xl:ml-2 sm:mx-auto">
+          <div className="flex flex-col justify-center relative w-80 xl:ml-2 sm:mx-auto">
             <p>
               I am a sophomore at Wesleyan University studying Computer Science
-              and Mathematics. I have been working on Privacy Research, more
-              specifically, on implementing GPC on Android. I am interested in
-              Privacy and theoretical Cryptography along with other concepts
-              including Neural Networks, and Algorithms.
-              <br /> <br />I have experience with React and React Native,
-              building frontend, backend, and full stack applications. I also
-              have expierence with large scale data-analysis and automation.
-              Additionally, I have a bit of experience with dev-ops and database
-              maangement.
+              and Mathematics. I am a privacy researcher, a product manager, and
+              most importantly a coder at heart. I have strong communication,
+              problem solving, and abstract & critical thinking skills. I am
+              also highly motivated and deeply enthusiastic to write code that
+              is efficient, and novel.
+              <br /> <br />
             </p>
+            <p className=" relative px-6 text-accent font-bold">
+              Connect with me!
+            </p>
+            <div className="absolute xl:bottom-[-5rem] sm:bottom-[-10rem] xs:bottom-[-10rem] z-50 flex items-center space-x-2 xl:flex-row sm:flex-col md:flex-col">
+              <a
+                className="bg-gray-950 text-white px-7 py-3 my-3 items-center gap-2 rounded-full flex focus:scale-110 hover:scale-110 hover:bg-black active:scale-105 transition"
+                href="/nishant-aggarwal-resume-website.pdf"
+                download={true}
+              >
+                Download CV
+                <HiDownload />
+              </a>
+              <a
+                className="bg-gray-950 text-white p-4 items-center gap-2 rounded-full flex hover:scale-120 hover:bg-black active:scale-110 transition"
+                href="https://www.linkedin.com/in/nishant-aggarwal-387b83252/"
+                target="_blank"
+              >
+                <AiFillLinkedin />
+              </a>
+              <a
+                className="bg-gray-950 text-white p-4 items-center gap-2 rounded-full flex hover:scale-120 hover:bg-black active:scale-110 transition"
+                href="https://github.com/n-aggarwal"
+                target="_blank"
+              >
+                <AiFillGithub />
+              </a>
+            </div>
           </div>
         </div>
       </div>
