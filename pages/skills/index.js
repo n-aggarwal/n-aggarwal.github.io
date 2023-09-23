@@ -91,7 +91,7 @@ const Details = ({ img, expertise, name }) => {
             </p>
           </div>
         </div>
-        <div className="absolute pr-14 right-[10rem] bottom-[2rem] hidden xl:group-hover:flex">
+        <div className="absolute pr-14 right-[80%] bottom-[2rem] hidden xl:group-hover:flex">
           <div className="bg-white relative flex text-primary items-center p-[6px] rounded-3[px]">
             <div className="text-[12px] leading-none font-semibold capitalize">
               {name}

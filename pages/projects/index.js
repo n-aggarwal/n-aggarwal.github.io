@@ -55,7 +55,7 @@ const Details = ({
         <h3 className="capitalize font-bold text-2xl text-accent">
           {name}&nbsp;
         </h3>
-        <div class="mx-auto w-[100%] my-2 border-b-2 border-gray-400"></div>
+        <div className="mx-auto w-[100%] my-2 border-b-2 border-gray-400"></div>
 
         <span className="capitalize font-medium text-dark/75">
           {organization}
