@@ -1,7 +1,10 @@
 import React from "react";
-import sendEmail from "../../actions/sendEmail";
 
 const Contact = () => {
+  const sendEmail = () => {
+    return;
+  };
+
   return (
     <div
       className="mt-40 w-full h-full bg-gradient-to-b from-[#2e2257]/5 to-pink-400"
